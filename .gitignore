@@ -1,0 +1,23 @@
+# Visual Studio / .NET
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.nuget.props
+*.nuget.targets
+*.pubxml
+*.publishsettings
+# Packages
+packages/
+# Build results
+[Dd]ebug/
+[Rr]elease/
+# Visual Studio cache
+.vs/
+# NuGet
+*.nupkg
+# Other
+*.bak
+*.log
