@@ -1,0 +1,129 @@
+﻿@font-face {
+    font-family: iransans;
+    src: url('../fonts/IRANSansWeb(FaNum).ttf');
+}
+
+:root {
+    writing-mode: horizontal-tb;
+    direction: rtl;
+    text-orientation: mixed;
+}
+
+/* تم مشکی شیک */
+body {
+    background-color: #1a1a1a; /* مشکی تیره */
+    color: #e0e0e0; /* خاکستری روشن */
+    font-family: 'IranSans', 'Tahoma', sans-serif;
+    direction: rtl; /* جهت‌گیری پیش‌فرض راست به چپ */
+}
+
+.chat-container {
+    height: 100vh;
+    overflow: hidden;
+    border: 1px solid #333; /* حاشیه ملایم */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+    height: 100%;
+    background-color: #2c2c2c; /* مشکی کمی روشن‌تر */
+    color: #b0b0b0;
+    border-left: 1px solid #444; /* جداکننده */
+}
+
+.messages {
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    background-color: #222; /* مشکی متوسط */
+    padding: 15px;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    word-wrap: break-word;
+    transition: transform 0.2s; /* انیمیشن ملایم */
+}
+
+    .message:hover {
+        transform: scale(1.02); /* بزرگ شدن در hover */
+    }
+
+.user {
+    background-color: #4a90e2; /* آبی تیره */
+    color: white;
+    align-self: flex-start;
+}
+
+.ai {
+    background-color: #2ecc71; /* سبز روشن */
+    color: #1a1a1a;
+}
+
+.error {
+    background-color: #e74c3c; /* قرمز */
+    color: white;
+}
+
+.typing {
+    opacity: 0.7;
+    font-style: italic;
+    color: #f1c40f; /* زرد */
+}
+
+.input-bar {
+    padding: 10px;
+    background-color: #2c2c2c;
+    border-top: 1px solid #444;
+}
+
+.btn-success {
+    background-color: #27ae60; /* سبز تیره */
+    border: none;
+    border-radius: 0; /* حذف گوشه‌های گرد */
+}
+
+    .btn-success:hover {
+        background-color: #219653;
+        transition: background-color 0.3s;
+    }
+
+.form-control, .form-select {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    border-radius: 0; /* گوشه‌ها تخت */
+}
+
+/* تنظیم اندازه انتخابگر مدل کوچکتر */
+.form-select {
+    max-width: 120px; /* عرض حداکثر 120px */
+    width: 120px; /* عرض ثابت */
+}
+
+.form-control {
+    flex-grow: 1; /* ورودی متن فضای بیشتری بگیره */
+}
+
+    /* رنگ placeholder سفید */
+    .form-control::placeholder {
+        color: #ffffff; /* سفید */
+    }
+
+    .form-control:focus, .form-select:focus {
+        background-color: #444;
+        box-shadow: 0 0 5px #4a90e2;
+        color: #ffffff;
+    }
+
+/* استایل برای متن انگلیسی (ltr) */
+.ltr {
+    direction: ltr;
+    text-align: left;
+}
+
+/* استایل برای آیتم‌های لیست */
+.list-group-item {
+    color: #ffffff; /* متن مشکی برای کنتراست */
+    border-color: #555; /* حاشیه تیره‌تر */
+}
